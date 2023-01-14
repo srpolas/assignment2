@@ -1,0 +1,270 @@
+/* Common style or Utilities */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    /* max-width: 1920px; */
+    margin: 0;
+    padding: 0;
+}
+/* header area style  */
+.container {
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.menu-area{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 280px;
+
+}
+.site-title{
+    font-weight: 700;
+}
+.menu{
+   display: flex;
+   gap: 50px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.title-banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    max-width: 100%;
+}
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+
+}
+.header-title h1{
+    font-size:40px ;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0;
+}
+.header-title p{
+    text-align: center;
+    padding: 10px 100px;
+}
+.explore-more {
+ background-color:#FF900E
+ ;
+ padding: 10px 20px;
+ border-radius: 5px;
+ border: 0;
+ font-size: 1rem;
+ color: #ffffff;
+}
+.banner {
+    max-width: 860px ;
+    margin: 30px;
+}
+.banner img{
+    width: 100%;;
+}
+
+/* Feature area style starts here */
+
+
+.feature-area {
+
+}
+.features {
+    display: flex;
+    
+
+}
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px ;
+    margin: 20px;
+    flex-basis: 50%;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    flex-basis: 50%;
+}
+.feature-text h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: gray;
+}
+.feature-text-ofour{
+    font-size: 42px;
+    font-weight: 700;
+    color: black;
+}
+.feature-text-feature{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.feature-text p{
+
+    padding: 10px 100px 0 0;
+    align-items: center;
+    justify-content: left;
+}
+.feature-text button{
+    width: 130px ;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+/* Experiance Area Starts Here  */
+
+.experiance-area {
+    position: relative;
+}
+.experiance-container {
+    display: flex;
+    margin: 50px 50px;
+    max-width: 100%;
+    position: relative;
+
+}
+.experiances-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  flex-basis: 50%;
+}
+.experiance-headline {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+    
+}
+.experiance-headline p{
+    padding: 0;
+    margin: 0;
+
+}
+.experiance-title {
+    box-shadow: 0px 0px 5px 2px rgba(239, 235, 235, 0.442);
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 8px;
+}
+.experiance-image {
+    flex-basis: 50%;
+}
+.experiance-image img{
+    height: 90%;
+}
+.experiance-button{
+  position: absolute;
+  padding: 30px;
+  color: #fff;
+  background-color: #FF900E;
+  border-radius: 5px;
+  border: 0;
+  font-size: 30px;
+  font-weight: 500;
+  bottom: 50px;
+  right: 500px;
+}
+/* Some facts area starts here  */
+
+
+.some-facts-are {
+}
+.some-facts-container {
+}
+.some-facts-text {
+    margin-bottom: 50px;
+}
+.awards {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.some-facts-box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FF900E;
+    border-radius: 5px;
+    padding: 15px ;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+}
+.some-facts-box img{
+    height: 45px;
+    width: 45px;
+}
+.some-facts-box h2, p{
+    margin: 0;
+    padding: 5px;
+
+}
+
+/* Spomsor area starts here  */
+
+.sponsor-area {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.sponsor-title {
+    text-align: center;
+    margin: 30px;
+}
+.sponsor-title h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.sponsor-title p{
+    padding: 0 100px;
+    text-align: center;
+}
+.sponsor-company {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+.sponsor-company img{
+    filter: grayscale(100);
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+    margin: 50px 100px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 577px) and  (max-width: 992px){ ... }
+
+
