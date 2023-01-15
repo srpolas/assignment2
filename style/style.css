@@ -4,30 +4,32 @@
 body{
     font-family: 'Work Sans', sans-serif;
     background-color: #ffffff;
-    /* max-width: 1920px; */
     margin: 0;
     padding: 0;
 }
+.section-container{
+    max-width: 1280px;
+    padding: 1vw;
+    margin: 0 auto;
+}
+
+
 /* header area style  */
 .container {
     background-color: rgba(255, 144, 14, 0.1);
 
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
+
 
 .menu-area{
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 0 280px;
+
 
 }
 .site-title{
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .menu{
@@ -37,25 +39,21 @@ padding: 0 280px;
 .menu a{
     text-decoration: none;
     color: black;
+    font-size: 1.3rem;
 }
 
 .title-banner-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-    max-width: 100%;
+    margin: 50px auto;
 }
 .header-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 860px;
 
 }
 .header-title h1{
-    font-size:40px ;
+    font-size: 55px;
     font-weight: 700;
     text-align: center;
     padding: 10px 30px;
@@ -63,50 +61,53 @@ padding: 0 280px;
 }
 .header-title p{
     text-align: center;
-    padding: 10px 100px;
+    width: 70%;
+    margin-bottom: 20px;
 }
 .explore-more {
- background-color:#FF900E
- ;
- padding: 10px 20px;
+ background-color:#FF900E;
+ padding: 15px 20px;
  border-radius: 5px;
  border: 0;
- font-size: 1rem;
+ font-size: 1.2rem;
  color: #ffffff;
+ font-weight: 600;
 }
-.banner {
-    max-width: 860px ;
-    margin: 30px;
+
+.banner{
+    margin-top: 50px;
 }
+
 .banner img{
-    width: 100%;;
+    width: 100%;
 }
 
 /* Feature area style starts here */
 
 
-.feature-area {
-
-}
 .features {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5%;
+    padding: 100px;
     
 
 }
 .feature-image {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px ;
-    margin: 20px;
-    flex-basis: 50%;
+    gap: 2.5% ;
+    margin-right: 2%;
+}
+.feature-image img{
+    border-radius: 10px;
 }
 
 .feature-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
-    flex-basis: 50%;
+    margin-left: 4% ;
 }
 .feature-text h2{
     font-size: 40px;
@@ -125,10 +126,7 @@ padding: 0 280px;
 }
 
 .feature-text p{
-
-    padding: 10px 100px 0 0;
-    align-items: center;
-    justify-content: left;
+padding-bottom: 8%;
 }
 .feature-text button{
     width: 130px ;
@@ -142,9 +140,10 @@ padding: 0 280px;
     position: relative;
 }
 .experiance-container {
-    display: flex;
-    margin: 50px 50px;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    margin: 50px 0;
     position: relative;
 
 }
@@ -152,7 +151,9 @@ padding: 0 280px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-  flex-basis: 50%;
+}
+.experiances-text p{
+    margin: 8px 0;
 }
 .experiance-headline {
     font-weight: 700;
@@ -162,22 +163,16 @@ padding: 0 280px;
     padding-left: 10px;
     
 }
-.experiance-headline p{
-    padding: 0;
-    margin: 0;
 
-}
 .experiance-title {
     box-shadow: 0px 0px 5px 2px rgba(239, 235, 235, 0.442);
-    padding: 10px;
-    margin: 10px 10px;
+    padding: 10px 15px;
+    margin: 10px 0px;
     border-radius: 8px;
 }
-.experiance-image {
-    flex-basis: 50%;
-}
+
 .experiance-image img{
-    height: 90%;
+    height: 77%;
 }
 .experiance-button{
   position: absolute;
@@ -186,26 +181,35 @@ padding: 0 280px;
   background-color: #FF900E;
   border-radius: 5px;
   border: 0;
-  font-size: 30px;
-  font-weight: 500;
-  bottom: 50px;
-  right: 500px;
+  font-size: 35px;
+  font-weight: 900;
+  bottom: 150px;
+  right: 30%;
+  left: 50%;
+  }
+
+.experiance-button-small{
+    font-size: 1rem;
+    font-weight: 600;
 }
+
 /* Some facts area starts here  */
 
 
-.some-facts-are {
-}
-.some-facts-container {
-}
 .some-facts-text {
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
+
+.some-facts-text p{
+    width: 40%;
+}
+
 .awards {
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    margin: 5% 0;
 }
+
 .some-facts-box {
     display: flex;
     flex-direction: column;
@@ -213,9 +217,18 @@ padding: 0 280px;
     border-radius: 5px;
     padding: 15px ;
     align-items: center;
-    height: 100px;
+    justify-content: center;
+    height: 150px;
     width: 150px;
+    transition: .3s;
 }
+
+.some-facts-box:hover {
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 10px 1px grey;
+}
+
+
 .some-facts-box img{
     height: 45px;
     width: 45px;
@@ -226,45 +239,100 @@ padding: 0 280px;
 
 }
 
-/* Spomsor area starts here  */
+/* Sponsor area starts here  */
 
-.sponsor-area {
-    
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
+
 .sponsor-title {
     text-align: center;
-    margin: 30px;
+
 }
 .sponsor-title h2{
-    font-size: 25px;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 .sponsor-title p{
-    padding: 0 100px;
+    padding: 0 300px;
     text-align: center;
 }
 .sponsor-company {
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px;
+    margin-top: 4%;
+    margin-bottom: 6%;
+
 }
 .sponsor-company img{
     filter: grayscale(100);
 }
 footer p{
     text-align: center;
-    padding: 10px;
-    margin: 50px 100px;
+    padding: 5px;
+
 }
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 576px) { ... }
+@media only screen and (max-width: 576px) {
+.menu-area, .menu{
+    flex-direction: column;
+}
+.features, .feature-image{
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px;
+    overflow: hidden;
+    }
+    .experiance-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experiances-text{
+        padding: 0 10px;
+    }
+    .experiance-image img{
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+    }
+    .experiance-button{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 10%;
+    }
+
+    .some-facts-text {
+        text-align: center;
+
+    }
+    .some-facts-text p{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .awards{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        justify-content: center;
+    }
+    .sponsor-title p{
+        padding: 10px;
+    }
+    .sponsor-company{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .sponsor-company img{
+        padding: 10px 20px;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 577px) and  (max-width: 992px){ ... }
 
 
+.hide{
+    display: none;
+}
